@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    right: 5rem;
+    bottom: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin: 0;
+    /* text-align: center;
+    display: block; */
+}
+
+.gallery-cont{
+    background-color: lightgrey;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.back:hover{
+    cursor: crosshair;
+}
+
+.media {
+    height: calc( 100% - 2rem - 2rem );
+}
+
+.media-cont{
+    height: 15rem;
+    width: 15rem;
+    background-color: teal;
+    border: 10px solid white;
+    margin: 2rem;
+}
+
+.media >* {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.action-btn:hover{
+    cursor: pointer;
+}
+.action-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    color: white;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}
+
+.download{
+    background-color: black;
+    color: white;
+}
+
+.back:hover{
+    cursor: crosshair;
+}
